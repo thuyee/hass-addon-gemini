@@ -1,1 +1,11 @@
-
+name: Gemini Web API
+version: "1.0"
+slug: gemini_web_api
+description: Add-on dùng Gemini Web làm API cho Home Assistant
+startup: application
+boot: auto
+image: "ghcr.io/smarthomeblack/gemini-web-api-amd64"
+ports:
+  5002/tcp: 5002
+map:
+  - config:rw
